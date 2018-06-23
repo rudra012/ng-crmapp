@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {AppRoutingModule} from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { AccountListComponent } from './account-list/account-list.component';
@@ -24,7 +25,8 @@ import { OpportunityCreateComponent } from './opportunity-create/opportunity-cre
     OpportunityCreateComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
