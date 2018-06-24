@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {AppRoutingModule} from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { AccountListComponent } from './account-list/account-list.component';
@@ -13,6 +14,7 @@ import { LeadCreateComponent } from './lead-create/lead-create.component';
 import { OpportunityListComponent } from './opportunity-list/opportunity-list.component';
 import { OpportunityCreateComponent } from './opportunity-create/opportunity-create.component';
 import { KeyupComponent } from './keyup/keyup.component';
+import { HeroFormComponent } from './hero-form/hero-form.component';
 
 @NgModule({
   declarations: [
@@ -25,12 +27,14 @@ import { KeyupComponent } from './keyup/keyup.component';
     LeadCreateComponent,
     OpportunityListComponent,
     OpportunityCreateComponent,
-    KeyupComponent
+    KeyupComponent,
+    HeroFormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

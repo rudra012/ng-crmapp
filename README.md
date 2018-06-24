@@ -57,3 +57,24 @@ ng generate component OpportunityList
 ng generate component OpportunityCreate
 ng generate component Keyup
 ```
+
+## ANGULAR Template Driven Forms
+
+* https://angular.io/guide/forms
+
+* Using the Angular CLI, generate a new class named Hero:
+
+`ng generate class Hero`
+
+* Create a form component
+
+`ng generate component HeroForm`
+
+There are two changes:
+
+We import FormsModule.
+
+We add the FormsModule to the list of imports defined in the @NgModule decorator. This gives the application access to all of the template-driven forms features, including ngModel.
+
+* https://angular.io/api/forms/FormsModule
+

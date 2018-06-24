@@ -9,6 +9,7 @@ import { LeadCreateComponent } from './lead-create/lead-create.component';
 import { OpportunityListComponent } from './opportunity-list/opportunity-list.component';
 import { OpportunityCreateComponent } from './opportunity-create/opportunity-create.component';
 import { KeyupComponent } from './keyup/keyup.component';
+import { HeroFormComponent } from './hero-form/hero-form.component';
 
 const routes: Routes = [
     { path:  '', redirectTo:  'accounts', pathMatch:  'full' },
@@ -47,6 +48,10 @@ const routes: Routes = [
     {
         path:  'keyup',
         component:  KeyupComponent
+    },
+    {
+        path:  'hero-form',
+        component:  HeroFormComponent
     }
 ];
 
