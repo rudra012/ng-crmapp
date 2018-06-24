@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiService } from '../api.service';
+import { Contact } from '../contact';
 
 @Component({
   selector: 'app-contact-create',
@@ -9,6 +10,20 @@ import { ApiService } from '../api.service';
 
 export class ContactCreateComponent implements OnInit {
   constructor(private  apiService:  ApiService) { }
+
+  contact = new Contact(1, 'Home N 333 Apartment 300', 1, 'This is the third contact',
+            'rudra@gmail.com', 'shailesh' , 'rudra', '123456789', true);
+
+  submitted = false;
+
+  onSubmit() {
+      this.submitted = true;
+      this.apiService.createContact(this.contact).subscribe((response) => {
+        console.log(response);
+    });
+    }
+
+  get contact_check() { return JSON.stringify(this.contact); }
 
   ngOnInit() {
   }
