@@ -78,3 +78,4 @@ We add the FormsModule to the list of imports defined in the @NgModule decorator
 
 * https://angular.io/api/forms/FormsModule
 
+* https://angular.io/guide/form-validation
