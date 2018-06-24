@@ -1,0 +1,44 @@
+<p>
+  keyup works!
+</p>
+<button (click)="buttonClick()">
+    Create Contact
+</button>
+<br>
+
+<span>{{ clickMessage }}</span>
+<br>
+
+<input (keyup)="onKey($event)">
+
+<p>{{keys}}</p>
+<p>{{values}}</p>
+<br>
+
+<input #box (keyup)="0">
+<p>{{box.value}}</p>
+<br>
+
+<input #box2 (keyup)="onKey(box2.value)">
+<p>{{box2_values}}</p>
+<br>
+
+<input #box3 (keyup.enter)="onEnter(box3.value)">
+<p>{{box3_value}}</p>
+<br>
+
+<input #box4 
+  (keyup.enter)="update(box4.value)" 
+  (blur)="update(box4.value)"
+  >
+<p>{{box4_value}}</p>
+<br>
+
+<input #newHero
+    (keyup.enter)="addHero(newHero.value)"
+    (blur)="addHero(newHero.value); newHero.value='' ">
+
+<button (click)="addHero(newHero.value)">Add</button>
+<button (click)="removeHero()">Remove</button>
+
+<ul><li *ngFor="let hero of heroes">{{hero}}</li></ul>

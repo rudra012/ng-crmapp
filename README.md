@@ -55,4 +55,5 @@ ng generate component LeadCreate
 
 ng generate component OpportunityList
 ng generate component OpportunityCreate
+ng generate component Keyup
 ```

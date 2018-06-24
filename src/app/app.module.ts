@@ -12,6 +12,7 @@ import { LeadListComponent } from './lead-list/lead-list.component';
 import { LeadCreateComponent } from './lead-create/lead-create.component';
 import { OpportunityListComponent } from './opportunity-list/opportunity-list.component';
 import { OpportunityCreateComponent } from './opportunity-create/opportunity-create.component';
+import { KeyupComponent } from './keyup/keyup.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { OpportunityCreateComponent } from './opportunity-create/opportunity-cre
     LeadListComponent,
     LeadCreateComponent,
     OpportunityListComponent,
-    OpportunityCreateComponent
+    OpportunityCreateComponent,
+    KeyupComponent
   ],
   imports: [
     BrowserModule,
